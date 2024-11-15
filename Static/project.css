@@ -2,27 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+.logo{
+    position: sticky;
+    top: 0;
+    padding: 2%;
+    width: 100%;
+    z-index: 7;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
 }
 .btn{
     background-color: orange;
     padding: 10px;
     font-size: 24px;
+
 }
+#btn{
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 10px;
+    right: 20px;
+}
+#btn i{
+    margin-top: 1px;
+    font-size: 30px;
+    height: 30px;
+}
+
 .header{
     width: 100%;
-    height: 100vh;
-    padding-top: 5%;
+    height: 100%;
+    background-color: aliceblue;
+    padding-top: 14px;
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px lightblue;
 }
 .content-banner{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
     gap: 20px;
-    margin-top: 6%;
 }
 
 #typing-text {
@@ -33,7 +67,6 @@ body{
     white-space: nowrap;
     overflow: hidden;
   }
-  
 
 .TypingText h1{
     font-size: 48px;
@@ -49,46 +82,52 @@ body{
     gap: 20px;
     text-align: center;
 }
+.post-cards{
+    gap: 5%;
+    height: max-content;
+    margin-top: 4%;
+}
+#typing-text{
+    color: red;
+}
 .cards{
-    margin-top: 30px;
-    border-radius: 8px;
-    gap: 2%;
+    box-shadow: 0 0 8px gray;
+    padding: 4%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards section  img{
+    width: 100%;
+    height: auto;  
+    border-radius: 10px;
+}
+
+.cardContent{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
 }
 .card1{
-    background-color: rgb(194, 224, 250);
+    background-color: rgb(212, 244, 255);
 }
 .card2{
-    background-color: rgb(255, 252, 156);
+    background-color: rgb(255, 245, 233);
 }
 .card3{
-    background-color: aquamarine;
+    background-color: rgb(194, 255, 194);
 }
-.card-body{
-    border: 1px solid gray;
-    box-shadow: 0px 0px 5px gray;
-    border-radius: 8px;
-    text-align: center;
-
+.Services{
+    gap: 4%;
+    width: 100%;
 }
-.card-body img{
-    width: 110px;
-    height: 100px;
-}
-
-.cricles{
-    display: flex;
-}
-.cricles section{
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background-color: aliceblue;
-}
-
 .ser{
+    position: relative;
     margin-top: 5%;
     padding-top: 40px;
-    gap: 10px;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     border: 1px solid blue;
@@ -118,7 +157,6 @@ body{
     background-color: rgb(36, 58, 84);
     color: wheat;
     width: 100%;
-    border-radius: 10px;
     margin-top: 4%;
     padding: 20px;
 }
@@ -132,7 +170,12 @@ body{
     border-radius: 5px;
 }
 
-
+footer{
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
 
 
 @media (max-width: 980px) {
@@ -140,7 +183,6 @@ body{
     .Vidpro img{
         height: 300px;
     }
-
     
 }
 
@@ -148,6 +190,12 @@ body{
     .cards{
         height: 600px;
     }
+    .cardContent{
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
     .ser{
         padding: 20px;
         align-content: center;

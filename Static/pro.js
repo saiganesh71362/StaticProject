@@ -18,7 +18,7 @@ function type() {
   if (currentCharacterIndex === currentPhrase.length) {
     isDeleting = true;
     transition = 'transform 0.3s ease'
-    typingSpeed = 200; 
+    color = "red"
   }
 
   if (isDeleting && currentCharacterIndex === 0) {
@@ -30,3 +30,11 @@ function type() {
   setTimeout(type, typingSpeed);
 }
 type();
+
+function bgChange() {
+  
+  document.getElementById("change").style.backgroundColor = "black";
+  document.getElementById("change").style.color = "white";
+  document.getElementById("logo").style.backgroundColor = "#36454F"
+  document.querySelector(".post-cards").style.color = "black";
+}
